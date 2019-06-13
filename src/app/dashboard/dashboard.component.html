@@ -1,0 +1,13 @@
+<p>
+  dashboard works!
+  {{ test }}
+</p>
+<p>
+{{ board.id }} <br/>
+{{ board.name }} <br/>
+</p>
+<ngx-packery [options]="packeryOptions">
+  <ngx-packery-item *ngFor="let widget of board.widgets" class="widget">
+    ID: {{ widget.id }} TYPE: {{ widget.type }} POSITIONX: {{ widget.positionX }} POSITIONY: {{ widget.positionY }}
+  </ngx-packery-item>
+</ngx-packery>
